@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  background: hsl(275, 100%, 97%);
+}
+@font-face {
+  font-family: "WorkSansBold";
+  src: url("./assets/fonts/static/WorkSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: "WorkSansSemiBold";
+  src: url("./assets/fonts/static/WorkSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "WorkSansRegular";
+  src: url("./assets/fonts/static/WorkSans-Regular.ttf");
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+header.mainHeader {
+  display: flex;
+  gap: 20px;
+  font-family: "WorkSansBold", sans-serif;
+  color: hsl(292, 42%, 14%);
+}
+
+header.subHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  font-family: "WorkSansSemiBold", sans-serif;
+  cursor: pointer;
+}
+
+header.subHeader h3:hover {
+  color: hsl(281, 83%, 54%);
+}
+
+section {
+  font-family: "WorkSansRegular", san-serif;
+  color: hsl(292, 16%, 49%);
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+hr {
+  color: hsl(0, 0%, 100%);
+}
+.divContainer {
+  background-image: url("../assets/images/background-pattern-desktop.svg");
+  background-size: "cover";
+  height: 50vh;
+}
+.card {
+  width: 30%;
+  min-width: 30%;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  border-radius: 10px;
+  padding: 28px;
+  z-index: 100;
+  background-color: hsl(0, 0%, 100%);
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 70%;
+    left: 10%;
+    right: 10%;
+  }
+}
